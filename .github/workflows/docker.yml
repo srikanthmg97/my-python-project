@@ -23,5 +23,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: srikanthamg/my-python-project:latest
-          username: srikanthamg
-          password: dckr_pat_5PNxImdKQy8O8-rh46F5nlMt5gk
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
